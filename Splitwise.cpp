@@ -70,7 +70,7 @@ int main(){
         m.erase(low);
         m.erase(high);
 
-        int settled_amount = min(-debit,credit);
+        int settled_amount = min(abs(debit),credit);
         debit += settled_amount;
         credit -= settled_amount;
 
